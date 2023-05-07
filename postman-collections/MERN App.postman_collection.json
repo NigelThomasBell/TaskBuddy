@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "70ce22ac-e47b-4d87-98b2-e441e1d739f4",
+		"name": "MERN App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26843925"
+	},
+	"item": [
+		{
+			"name": "GET: all tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDUwOWRlODhiYmU2N2M1MDI4ZDAxNmQiLCJpYXQiOjE2ODMzNTQzOTMsImV4cCI6MTY4MzYxMzU5M30.BrDCoa2eYKoZTAdwwuZf6f0KurvHGjICKCcZBeGI7PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/tasks/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET: a single task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDUwOWRlODhiYmU2N2M1MDI4ZDAxNmQiLCJpYXQiOjE2ODMzNTQzOTMsImV4cCI6MTY4MzYxMzU5M30.BrDCoa2eYKoZTAdwwuZf6f0KurvHGjICKCcZBeGI7PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:4000/api/tasks/6456ff8e965ebcee16f0a2cc",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tasks",
+						"6456ff8e965ebcee16f0a2cc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST: a new task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDUwOWRlODhiYmU2N2M1MDI4ZDAxNmQiLCJpYXQiOjE2ODMzNTQzOTMsImV4cCI6MTY4MzYxMzU5M30.BrDCoa2eYKoZTAdwwuZf6f0KurvHGjICKCcZBeGI7PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Make breakfast\",\r\n    \"description\": \"Make coffee, then cereal\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/tasks/",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE: a task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDUwOWRlODhiYmU2N2M1MDI4ZDAxNmQiLCJpYXQiOjE2ODMzNTQzOTMsImV4cCI6MTY4MzYxMzU5M30.BrDCoa2eYKoZTAdwwuZf6f0KurvHGjICKCcZBeGI7PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/tasks/64572aa02e8e92fb903dab36",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tasks",
+						"64572aa02e8e92fb903dab36"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PATCH: a new task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDUwOWRlODhiYmU2N2M1MDI4ZDAxNmQiLCJpYXQiOjE2ODMzNTQzOTMsImV4cCI6MTY4MzYxMzU5M30.BrDCoa2eYKoZTAdwwuZf6f0KurvHGjICKCcZBeGI7PA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Make another breakfast\",\r\n    \"description\": \"Make only a coffee\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:4000/api/tasks/64572be22e8e92fb903dab3f",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"api",
+						"tasks",
+						"64572be22e8e92fb903dab3f"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
