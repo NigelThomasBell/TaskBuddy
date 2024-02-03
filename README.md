@@ -1,4 +1,5 @@
-# Task Buddy - A MERN stack web application project
+# TaskBuddy - A MERN stack web application project
+![TaskBuddy Project Image](/_readme_images/TaskBuddy.png "TaskBuddy Project Image")
 ## Introduction
 * This project:
     * Is based on:
